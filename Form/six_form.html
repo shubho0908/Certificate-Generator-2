@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+    <!-- <link rel="stylesheet" href="form2.css">
+    <link rel="stylesheet" href="form3.css"> -->
+    <link rel="stylesheet" href="form6.css">
+
+    <!-- Bootstrap -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous"
+  />
+
+  <!-- Fonts -->
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" media="all">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+
+
+    
+</head>
+<body id="body">
+  <div id="alert" class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Important!</strong> Please make sure you choose <b>Landscape</b> mode & select "<b>Odd Pages Only</b>" while printing your certificate and enable <b>Background Graphics</b> from more settings.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+    <div class="containerr">
+      <!-- Button trigger modal -->
+    <button id="modal" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <img id="modal-img" src="../assets/img/blog/imp.png" alt="">
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Important!</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Make sure you've a signature image with <b>transparent background</b>. Use <b><a href="https://www.remove.bg/" target="_blank">BG Remover</a></b> to remove background from images easily.
+            <img id="remover" src="../assets/img/blog/remover.jpg" alt="">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+        <form action="#" id="form">
+            <div class="first-name">
+                <label for="fname"> First Name: <br>
+                    <input type="text" name="fname" id="fname" required>
+                </label>
+            </div>
+            <div class="last-name">
+                <label for="lname"> Last Name: <br>
+                    <input type="text" name="lname" id="lname" required>
+                </label>
+            </div>
+            <div class="date">
+                <label for="date"> Date of Completion: <br>
+                    <input type="text" name="date" id="date" placeholder="Example: January 25" required>
+                </label>
+            </div>
+            <div class="length">
+                <label for="length"> Length of Course: <br>
+                    <input type="number" name="length" id="length" required>
+                </label>
+            </div>
+            <div class="course">
+                <label for="course"> Course Name: <br>
+                    <input type="text" name="course" id="course" required>
+                </label>
+            </div>
+            
+            <div class="btn">
+                <button id="Generate" type="submit" >Generate</button>
+            </div>
+        </form>
+    </div>
+
+
+        <div class="content">
+            <div class="inside">
+              <div id="ccc" class="certificate-box">
+                <!-- <img
+                  id="certificate"
+                  src="../assets/img/Certificates/EDIT/2/2 - 1.png"
+                  alt=""
+                />
+                <div class="name">${first} ${last}</div>
+                <div class="description">For completing the ${course_length}-hour online course on <b>${course_name}</b></div> -->
+                <!-- <div class="sign">
+                    <label for="sign">Signature <br>
+                        <input type="file" name="sign" id="sign" accept="image/png, image/jpg">
+                    </label>
+                </div> -->
+              </div>
+              <div class="custom-box">
+                
+                <div class="font-box">
+                    <!-- Example split danger button -->
+                    <h2>Fonts:</h2>
+                    <div class="btn-group">
+                      <button id="alex" type="button" class="btn btn-white">Alex Brush</button>
+                      <button id="downn"
+                        type="button"
+                        class="btn btn-white dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a id="alex2" class="dropdown-item">Alex Brush</a></li>
+                        <li><a id="dancing" class="dropdown-item">Dancing Script</a></li>
+                        <li><a id="caveat" class="dropdown-item">Caveat</a></li>
+                        <li>
+                          <a id="Courgette" class="dropdown-item">Courgette</a>
+                        </li>
+                        
+                        <li><a id="Allura" class="dropdown-item">Allura</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="font-size">
+                    <h2>Font Size:</h2>
+                    <div class="btn-group">
+                      <button id="normal" type="button" class="btn btn-white">Default</button>
+                      <button id="downn"
+                        type="button"
+                        class="btn btn-white dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a id="normal2" class="dropdown-item">Default</a></li>
+                        <li><a id="larger" class="dropdown-item">Large</a></li>
+                        <li><a id="smaller" class="dropdown-item">Small</a></li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+              
+              <div class="download">
+                  <button id="Download" type="button" class="btn btn-success">Download</button>
+          
+                </div>
+              
+            </div>
+
+            
+
+
+
+
+    </div>
+
+        
+
+
+        <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+  
+  <script src="../Certificate Js/six.js"></script>
+
+    </body>
+</body>
+</html>
